@@ -1,0 +1,19 @@
+<title>Tracking Your IP Geolocation</title>
+<h1>Your Public IP: {{ ip }} </h1>
+<h2>At Location: {{ location }}</h2>
+{% if is_cache == 'yes' %}
+  <i>Your result location is get from caching system</i>
+{% else %}
+  <i>Your result location is not get from caching system</i>
+
+{% endif %}
+<br>
+
+<iframe 
+width=600
+height=600
+frameborder="0"
+style="border:0"
+src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDxbbUtnl0JPzQog6uM4Xoq7w3v0ieJvc8&center=10.8142,106.6438&zoom=9"
+allowfullscreen
+></iframe>
